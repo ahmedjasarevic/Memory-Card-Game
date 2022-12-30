@@ -103,7 +103,24 @@ img{
     bottom: -100px; /* add some space between the cells and the button */
     left: 50%; /* center the button horizontally */
     transform: translateX(-50%); /* adjust the position to center the button horizontally */
+    border: 2px solid #000;
+    padding: 8px 8px;
+    font-size: 18px;
+    width: 250px;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: #fff;
   }
+
+  .restart-button:active,
+.restart-button:focus {
+  outline: none;
+  border: 2px solid #E15E32;
+}
+
+.restart-button:hover {
+  background-color: #ece9e9;
+}
 
 
   
