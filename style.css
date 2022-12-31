@@ -1,3 +1,5 @@
+
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -5,18 +7,28 @@
 }
 
 body{
-    background-color: #f2f2f2;
+    bottom: -100px;
 }
-.container{
+
+h2{
+    font-family: 'East Sea Dokdo', cursive;
+    font-size: 45px;
+    text-transform:uppercase;
+}
+
+
+.containerM{
     max-width: 960px;
     display: grid;
     grid-template-columns: repeat(3,auto);
     gap: 1rem;
     margin: auto;
     padding: 20px;
+    background-color: black;
+
 }
 
-.head{
+.headM{
     max-width: 480px;
     border: 2px solid #a6a6a6;
     margin:auto;
@@ -26,10 +38,13 @@ body{
     align-items: center;
     flex-direction: column;
     margin-top: 20px;
+    background-color: black;
+    color: white;
 }
 
 .score{
     margin-top: 10px;
+    color:white;
 }
 
 .cell div{
@@ -40,6 +55,14 @@ body{
 .cell{
     position: relative;
     cursor: pointer;
+     border: 2px solid white;
+}
+
+.game-containerM{
+
+  max-width: 960px;
+  margin: 0 auto;
+
 }
 
 .front{
@@ -56,11 +79,12 @@ body{
 
 .back{
     background-color: black;
+
 }
 
 img{
     height: 100px;
-    width: 100px;
+
 }
 
 .flip{
@@ -93,11 +117,11 @@ img{
 .hide {
     display: none;
   }
-  
+
 .game-container {
     position: relative;
   }
-  
+
   .restart-button {
     position: absolute;
     bottom: -100px; /* add some space between the cells and the button */
@@ -123,5 +147,4 @@ img{
 }
 
 
-  
-  
+
